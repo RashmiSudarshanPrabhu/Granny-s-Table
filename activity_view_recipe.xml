@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/recipe_list_background">
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search recipes..."
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:textSize="16sp" />
+
+    <!-- RecyclerView to display recipes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipeRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

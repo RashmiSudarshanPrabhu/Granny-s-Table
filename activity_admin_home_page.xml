@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminHomePage"
+    android:fitsSystemWindows="true">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_black"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white_smoke"/>
+
+    <!-- ScrollView to make content scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_view"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/card_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Add Recipe Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/add_recipe_card"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="12dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/gradient_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/add_recipe_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/addreciepe" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Recipe"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- View Recipe Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/view_recipe_card"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="12dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_bg"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/view_recipe_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/viewrecipe" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Recipe"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Users Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/users_card"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="12dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_bg"
+
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/users_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/users" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Users"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Logout Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/logout_card"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="12dp">
+
+                <LinearLayout
+                    android:background="@drawable/gradient_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/logout_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/logout" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Logout"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

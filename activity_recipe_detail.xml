@@ -1,0 +1,102 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rec"
+        >
+
+        <TextView
+            android:id="@+id/recipeDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🍽Recipe Title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dark_blue"
+            android:justificationMode="inter_word"/>
+
+        <ImageView
+            android:id="@+id/recipeDetailImage"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/recipeIngredientsHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🧄Ingredients"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/dark_blue"
+            android:justificationMode="inter_word"/>
+
+        <TextView
+            android:id="@+id/recipeIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients go here."
+            android:textSize="16sp"
+            android:textColor="@color/dark_blue"
+            android:justificationMode="inter_word"/>
+
+        <TextView
+            android:id="@+id/recipeStepsHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👩‍🍳Steps"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/dark_blue"
+            android:justificationMode="inter_word"/>
+
+        <TextView
+            android:id="@+id/recipeSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Steps go here."
+            android:textSize="16sp"
+            android:textColor="@color/dark_blue"
+            android:justificationMode="inter_word"/>
+
+        <TextView
+            android:id="@+id/HealthbenifitsHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💚Health Benifits"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/dark_blue"
+            android:justificationMode="inter_word"/>
+        <TextView
+            android:id="@+id/recipeHealthBenefits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health benefits go here."
+            android:textSize="16sp"
+            android:textColor="@color/dark_blue"
+            android:justificationMode="inter_word"/>
+
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚀Share Recipe"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/orange_500" />
+
+    </LinearLayout>
+</ScrollView>

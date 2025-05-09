@@ -1,0 +1,120 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/rec">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Page"
+            android:textSize="24sp"
+            android:textColor="@color/dark_orange"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="18dp"
+            android:textStyle="bold"
+            android:textColorHint="@color/black"
+            />
+
+        <!-- Recipe Title -->
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Recipe Title"
+            android:inputType="text"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
+
+        <!-- Category Spinner -->
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black" />
+
+        <!-- Subcategory Spinner -->
+        <Spinner
+            android:id="@+id/subcategorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
+
+        <!-- Ingredients -->
+        <EditText
+            android:id="@+id/ingredientsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingredients (comma-separated)"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
+
+        <!-- Steps -->
+        <EditText
+            android:id="@+id/stepsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Steps"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
+
+        <!-- Health Benefits -->
+        <EditText
+            android:id="@+id/healthBenefitsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Health Benefits (optional)"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
+
+        <!-- Select Image Button -->
+        <Button
+            android:id="@+id/selectImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Image"
+            android:backgroundTint="@color/dark_blue"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Display Selected Image -->
+        <ImageView
+            android:id="@+id/selectedImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="12dp"
+            android:background="#E0E0E0"
+            android:scaleType="centerCrop" />
+
+        <!-- Add Recipe Button -->
+        <Button
+            android:id="@+id/addRecipeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Recipe"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

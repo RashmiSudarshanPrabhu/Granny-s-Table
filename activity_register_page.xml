@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/reg"
+    android:id="@+id/main">
+
+    <!-- Username field -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="296dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="175dp"
+
+        android:hint="User Name"
+        android:textColorHint="@color/black" />
+
+    <!-- Phone number field -->
+
+    <!-- Email field -->
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="301dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black" />
+
+    <!-- Password field with TextInputLayout -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_input_layout"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:passwordToggleContentDescription="Show/Hide password"
+
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="308dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAllCaps="true"
+            android:textColorHint="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Confirm Password field with TextInputLayout -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirm_password_input_layout"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:passwordToggleContentDescription="Show/Hide confirm password"
+
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="305dp"
+            android:layout_height="68dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Sign Up button -->
+<Button
+android:id="@+id/signup_button"
+android:layout_width="172dp"
+android:layout_height="45dp"
+android:layout_marginTop="16dp"
+android:backgroundTint="@color/black"
+android:text="Sign Up" />
+
+    <!-- Login link -->
+<TextView
+android:id="@+id/login_link"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Already have an account? Login"
+android:layout_gravity="center"
+android:textColor="@android:color/holo_blue_light"
+android:layout_marginTop="16dp" />
+    </LinearLayout>

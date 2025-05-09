@@ -1,0 +1,27 @@
+<!-- activity_recipe_list.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/recipe_list_background"
+
+    >
+
+    <!-- Search bar -->
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search recipes"
+        android:inputType="text" />
+<ListView
+        android:id="@+id/recipeListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:clipToPadding="false"
+    android:dividerHeight="16dp"
+    android:divider="@android:color/transparent"/>  <!-- ✅ Ensures margin spacing is visible -->
+
+</LinearLayout>

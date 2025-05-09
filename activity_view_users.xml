@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige"
+    android:padding="16dp">
+
+    <!-- Row: Start Date & End Date Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <!-- Start Date Button -->
+        <Button
+            android:id="@+id/startDateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start Date"
+            android:backgroundTint="@color/orange_500"/>
+
+        <!-- End Date Button -->
+        <Button
+            android:id="@+id/endDateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/orange_500"
+            android:text="End Date"/>
+    </LinearLayout>
+
+    <!-- Row: Start & End Date TextViews -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/startDateTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start Date: Not Selected"
+            android:textSize="14sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/endDateTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="End Date: Not Selected"
+            android:textSize="14sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Filter Users Button (Centered) -->
+    <Button
+        android:id="@+id/filterUsersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter Users"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+    android:backgroundTint="@color/orange_500"/>
+
+    <!-- ✅ User Count TextView -->
+    <TextView
+        android:id="@+id/userCountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Users: 0"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:gravity="center"/>
+
+    <!-- List of Users -->
+    <ListView
+        android:id="@+id/usersListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+</LinearLayout>
